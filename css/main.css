@@ -46,14 +46,18 @@
   justify-content: space-around;
 }
 .chat-items:hover {
-  background-color: #4C91C7;
+  background-color: #56a3dd;
 }
 .chat-list {
+  margin: 0;
   height: auto;
 }
 .avatar {
   display: flex;align-items: center;
   justify-content: center;
+}
+.telegram {
+  align-self: flex-start;
 }
 .col-3-date {
   display: flex;
@@ -62,6 +66,7 @@
   justify-content: space-around;
 }
 .dont-pinned {
+  margin-top: 3px;
   justify-content: start;
 }
 .person-name {
@@ -112,6 +117,24 @@
 }
 .avatar, .name, .col {
   padding: 0;
+}
+.new-chat {
+  width: 38px;
+  height: 29px;
+  background-color: transparent;
+  border: none;
+  border-radius: 3px;
+}
+.searching-page {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.second-column {
+  margin: 0;
 }
 
 
