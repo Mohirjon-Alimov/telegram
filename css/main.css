@@ -157,6 +157,19 @@
   left: 57px;
   bottom: 11px;
 }
+.navigation {
+  height: 49px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+.navigation-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .second-column {
   margin: 0;
