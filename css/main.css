@@ -29,8 +29,13 @@
 *{
   box-sizing: border-box;
 }
+body {
+  font-family: 'Source Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
 .chat-items {
-  max-width: 800px;
+  max-width: 600px;
   min-width: 320px;
   height: 66px;
   padding: 0;
@@ -51,7 +56,7 @@
 }
 .chat-list {
   height: 570px;
-  overflow: scroll;
+  overflow: auto;
   margin: 0;
 }
 .avatar {
@@ -88,8 +93,6 @@
   color: #333333;
 }
 .secondary-name {
-  font-family: 'Source Sans Pro' sans-serif;
-  font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   display: flex;
@@ -111,8 +114,6 @@
 }
 .date {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.0521739px;
@@ -137,6 +138,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid rgb(212, 212, 212);
 }
 .searching-col {
   width: 224px;
@@ -174,6 +176,8 @@
 
 
 .second-column {
+  min-width: 500px;
+  max-width: 700px;
   margin: 0;
 }
 .col-header {
@@ -183,9 +187,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgb(212, 212, 212);
 }
 .close-btn {
-  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -195,14 +199,163 @@
 }
 .last-seen {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.0521739px;
   color: #A9A9A9;
 }
+.chat-page {
+  height: 570px;
+  margin: 0;
+  padding: 0;
+  padding-left: 66px;
+  padding-right: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+.chat-page-item {
+  margin-top: 11px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat-page-item::before {
+  content: url(../img/avatar1.png);
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: -53px;
+  top: 0;
+}
+.evgenia::before {
+  content: url(../img/evgenia2.png);
+}
+.per-name {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.0565218px;
+  color: #2481CC;
+}
+.per-text {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.0565218px;
+  color: #060606;
+  margin: 0;
+}
+.chat-date {
+  position: relative;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.0521739px;
+  color: #999999;
+}
+.chat-date::before {
+  position: relative;
+  left: -4px;
+  content: url(../img/read.png);
+  width: 17px;
+  height: 8px;
+}
+.text-link {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.0565218px;
+  color: #2481CC;
+  text-decoration: none;
+}
+.content {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.0565218px;
+}
+.chat-section {
+  position: relative;
+}
+.go-link {
+  height: 120px;
+  position: relative;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.go-link::before {
+  content: " ";
+  width: 3px;
+  height: 120px;
+  background-color: #66a7db;
+  position: absolute;
+  left: -10px;
+}
+.go-link-content {
+  width: 330px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.go-link-2 {
+  height: 77px;
+}
+.go-link-2::before {
+  content: " ";
+  height: 77px;
+}
+.content-img {
+  position: relative;
+  top: -10px;
+}
+.chatting-date {
+  margin-top: 12px;
+  align-self: center;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.0565218px;
+  color: #999999;
+}
 
+
+
+
+.write-mes {
+  height: 49px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.message {
+  border: 0;
+  width: 340px;
+}
+.put-file {
+  border: 0;
+  padding: 0;
+  width: 18px;
+  height: 19px;
+  background-color: transparent;
+}
+.smiles {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.voice {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.put-file ~ .message {
+  margin-right: 27px;
+}
 
 
 
@@ -213,7 +366,7 @@
     display: none;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 990px) {
   .first-column {
     display: none;
   }
