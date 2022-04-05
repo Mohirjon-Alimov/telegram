@@ -33,6 +33,10 @@ body {
   font-family: 'Source Sans Pro',sans-serif;
   font-style: normal;
   font-weight: 400;
+  height: 100vh;
+}
+.big-row {
+  height: 100vh;
 }
 .chat-items {
   max-width: 600px;
@@ -54,8 +58,13 @@ body {
 .chat-items:hover {
   background-color: #56a3dd;
 }
+.first-column {
+  max-width: 600px;
+  height: 100vh;
+}
 .chat-list {
-  height: 570px;
+  max-width: 600px;
+  height: 90%;
   overflow: auto;
   margin: 0;
 }
@@ -133,6 +142,7 @@ body {
   border-radius: 3px;
 }
 .searching-page {
+  max-width: 600px;
   height: 47px;
   margin: 0;
   display: flex;
@@ -162,6 +172,7 @@ body {
   bottom: 11px;
 }
 .navigation {
+  max-width: 600px;
   height: 49px;
   display: flex;
   justify-content: space-around;
@@ -178,6 +189,7 @@ body {
 .second-column {
   min-width: 500px;
   max-width: 700px;
+  height: 100vh;
   margin: 0;
 }
 .col-header {
@@ -205,7 +217,7 @@ body {
   color: #A9A9A9;
 }
 .chat-page {
-  height: 570px;
+  height: 90%;
   margin: 0;
   padding: 0;
   padding-left: 66px;
@@ -325,6 +337,7 @@ body {
 
 
 .write-mes {
+  max-width: 700px;
   height: 49px;
   padding-left: 20px;
   padding-right: 20px;
@@ -355,6 +368,18 @@ body {
 }
 .put-file ~ .message {
   margin-right: 27px;
+}
+
+
+
+
+
+
+
+
+.third-column {
+  max-width: 600px;
+  height: 100vh;
 }
 
 
