@@ -37,6 +37,7 @@ body {
 }
 .big-row {
   height: 100vh;
+  justify-content: center;
 }
 .chat-items {
   max-width: 600px;
@@ -59,7 +60,7 @@ body {
   background-color: #56a3dd;
 }
 .first-column {
-  max-width: 600px;
+  width: 370px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -190,9 +191,9 @@ body {
 
 
 .second-column {
-  min-width: 500px;
-  max-width: 700px;
-  height: 100%;
+  max-width: 100%;  
+  min-width: 450px;
+  height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -352,11 +353,17 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.write-mes-1, .write-mes-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .message {
   border: 0;
   width: 340px;
 }
 .put-file {
+  margin-right: 27px;
   border: 0;
   padding: 0;
   width: 18px;
@@ -369,12 +376,10 @@ body {
   background-color: transparent;
 }
 .voice {
+  margin-left: 24px;
   border: 0;
   padding: 0;
   background-color: transparent;
-}
-.put-file ~ .message {
-  margin-right: 27px;
 }
 
 
@@ -385,7 +390,7 @@ body {
 
 
 .third-column {
-  max-width: 800px;
+  max-width: 600px;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -409,9 +414,29 @@ body {
   .third-column {
     display: none;
   }
+  .second-column {
+    width: 100%;
+  }
+  .write-mes {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 990px) {
   .first-column {
     display: none;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .first-column {
+    display: none;
+  }
+  .second-column {
+    min-width: 550px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .second-column {
+    min-width: auto;
   }
 }
