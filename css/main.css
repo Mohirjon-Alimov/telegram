@@ -61,7 +61,7 @@ body {
 }
 .first-column {
   width: 370px;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -149,7 +149,7 @@ body {
 }
 .searching-page {
   max-width: 600px;
-  height: 47px;
+  min-height: 47px !important;
   margin: 0;
   display: flex;
   justify-content: space-around;
@@ -179,7 +179,7 @@ body {
 }
 .navigation {
   max-width: 600px;
-  height: 49px;
+  min-height: 49px !important;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -196,7 +196,7 @@ body {
 .second-column {
   max-width: 100%;  
   min-width: 450px;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -204,7 +204,7 @@ body {
   justify-content: space-between;
 }
 .col-header {
-  height: 47px;
+  min-height: 47px !important;
   padding-left: 20px;
   padding-right: 37px;
   display: flex;
@@ -349,7 +349,7 @@ body {
 
 .write-mes {
   max-width: 700px;
-  height: 49px;
+  min-height: 49px !important;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
@@ -396,7 +396,7 @@ body {
 
 .third-column {
   max-width: 600px;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -406,7 +406,7 @@ body {
 .third-column__header {
   max-width: 600px;
   padding-right: 14px;
-  height: 47px;
+  min-height: 47px !important;
   border-bottom: 1px solid rgb(212, 212, 212);
 }
 .edit-btn  {
@@ -436,7 +436,7 @@ body {
   color: #333333;
 }
 .buttons {
-  height: 49px;
+  min-height: 49px !important;
   border-top:1px solid rgb(212, 212, 212);
 }
 .buttons>button {
